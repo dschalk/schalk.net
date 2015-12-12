@@ -356,12 +356,12 @@
 	            { href: 'http://schalk.net:4001' },
 	            _react2['default'].createElement(
 	              'button',
-	              { style: _this.bool1 ? _this.style1 : _this.style2,
+	              { style: _this.bool6 ? _this.style1 : _this.style2,
 	                onMouseEnter: function () {
-	                  return _this.cT1();
+	                  return _this.cT6();
 	                },
 	                onMouseLeave: function () {
-	                  return _this.cF1();
+	                  return _this.cF6();
 	                } },
 	              'Fun With Monads'
 	            )
@@ -373,12 +373,12 @@
 	            { href: 'http://schalk.net:4002' },
 	            _react2['default'].createElement(
 	              'button',
-	              { style: _this.bool3 ? _this.style1 : _this.style2,
+	              { style: _this.bool7 ? _this.style1 : _this.style2,
 	                onMouseEnter: function () {
-	                  return _this.cT3();
+	                  return _this.cT7();
 	                },
 	                onMouseLeave: function () {
-	                  return _this.cF3();
+	                  return _this.cF7();
 	                } },
 	              'Websockets Monads'
 	            )

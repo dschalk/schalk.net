@@ -314,18 +314,18 @@ class B4 extends React.Component {
 <div style={{ width: '30%', fontSize: 22, position: 'fixed', top: 200, right: 5 }} >
 <br /><br />
 <a href="http://schalk.net:4001">
-<button style={this.bool6 ? this.style1 : this.style2 }
-   onMouseEnter={ () => this.cT6() }
-   onMouseLeave={ () => this.cF6() }  >
+<button style={this.bool1 ? this.style1 : this.style2 }
+   onMouseEnter={ () => this.cT1() }
+   onMouseLeave={ () => this.cF1() }  >
  Fun With Monads
   </button>
 </a>
 
 <br /><br />
 <a href="http://schalk.net:4002">
-  <button style={this.bool7 ? this.style1 : this.style2 }
-   onMouseEnter={ () => this.cT7() }
-   onMouseLeave={ () => this.cF7() }  >
+  <button style={this.bool3 ? this.style1 : this.style2 }
+   onMouseEnter={ () => this.cT3() }
+   onMouseLeave={ () => this.cF3() }  >
    Websockets Monads
   </button>
 </a>
