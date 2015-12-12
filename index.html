@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>David Schalk</title>
+</head>
+<body onload="window.scrollTo(0,50)" style="background-color: #000000" >
+    <div id="divSix"></div>
+  <div style=" width: 65%; text-align: 'left'; margin-left: 40px; margin-right: 40px; font-size: 24px; color: #FFE4C4 " >
+    <p>  "Fun With Monads" is the first page in the new Javascript Monads series. It shows how the basic monads work and gives an preview of the second page by presenting an example that uses instances of the more complex MonadIter constructor. The monad API is in an index.html script, so you can experiment with them in the browser console.</p>
+
+    <p>  Websockets Monads demonstrates the use of monads in handling websockets messages. These are not chat room messages; they are numeric data provided by a Haskell web server. The monads run the data through successive computations guided by client interaction with the browser. As in "Fun With Monads", the api is available for experimentation in the browser console.</p>
+    
+    <p>  The "Javascript Monads" link is to an online description and demonstration of javascript generalized monads. They can provide encapsulated chains of computations free from side effects, but they are called "generalized" because they are capable of doingo much more than that. The code is at github.com/dschalk/reactive-monads and github.com/dschalk/mobservable-monads. Mobservable is my favorite library of observable reactive functionality, but the code was refactored to frequently call React.forceUpdate instead of mobservable. I wasn't using React the way they do at Facebook, and I have since stopped using it. I find snabbdom to be a better alternative for my applications. </p>
+
+    <p>  "Reactive Buttons" shows a way to make React.js rollover buttons with more than the usual amount of functionality. These buttons interract with textbox input. The code is at mobservable-react-buttons "Todo List" is showcases mobservable, React, and javascript monads in a little todo app. The monads aren't necessary, but the app provides an opportunity to show how the monads work. The code is at <a href="https://github.com/dschalk/reactive-todos">reactive todos</a>  </p>
+
+    <p> The game of Score features a Haskell Websockets server on the back end, and React.js on the front end. A tutorial at Score Tutorial describes the application in detail. I still use virtual dom diff & render, but I now do it with snabbdom, which is more efficient and easy to work with in my applications. React may well be the best option for big enterprises like Facebook.  </p>
+</div>
+
+     <p>And that was the year that was. </p>
+<script type="text/javascript" src="./bundle.js"></script>
+</body>
+</html>
