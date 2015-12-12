@@ -229,7 +229,7 @@
 
 	    this.cT6 = function () {
 	      var self = _this;
-	      _this.bool1 = true;
+	      _this.bool6 = true;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -238,7 +238,7 @@
 
 	    this.cF6 = function () {
 	      var self = _this;
-	      _this.bool1 = false;
+	      _this.bool6 = false;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -247,7 +247,7 @@
 
 	    this.cT7 = function () {
 	      var self = _this;
-	      _this.bool2 = true;
+	      _this.bool7 = true;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -256,7 +256,7 @@
 
 	    this.cF7 = function () {
 	      var self = _this;
-	      _this.bool2 = false;
+	      _this.bool7 = false;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -265,7 +265,7 @@
 
 	    this.cT8 = function () {
 	      var self = _this;
-	      _this.bool2 = true;
+	      _this.bool8 = true;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -274,7 +274,7 @@
 
 	    this.cF8 = function () {
 	      var self = _this;
-	      _this.bool2 = false;
+	      _this.bool8 = false;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -283,7 +283,7 @@
 
 	    this.cT9 = function () {
 	      var self = _this;
-	      _this.bool3 = true;
+	      _this.bool9 = true;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -292,7 +292,7 @@
 
 	    this.cF9 = function () {
 	      var self = _this;
-	      _this.bool3 = false;
+	      _this.bool9 = false;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -301,7 +301,7 @@
 
 	    this.cT10 = function () {
 	      var self = _this;
-	      _this.bool4 = true;
+	      _this.bool10 = true;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -310,7 +310,7 @@
 
 	    this.cF10 = function () {
 	      var self = _this;
-	      _this.bool4 = false;
+	      _this.bool10 = false;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -319,7 +319,7 @@
 
 	    this.cT11 = function () {
 	      var self = _this;
-	      _this.bool5 = true;
+	      _this.bool11 = true;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -328,7 +328,7 @@
 
 	    this.cF11 = function () {
 	      var self = _this;
-	      _this.bool5 = false;
+	      _this.bool11 = false;
 	      setTimeout(function () {
 	        self.forceUpdate();
 	      }, 8);
@@ -495,6 +495,7 @@
 	    this.bool8 = false;
 	    this.bool9 = false;
 	    this.bool10 = false;
+	    this.bool11 = false;
 	  }
 
 	  return B4;

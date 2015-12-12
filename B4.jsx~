@@ -86,6 +86,7 @@ class B4 extends React.Component {
     this.bool8 = false;
     this.bool9 = false;
     this.bool10 = false;
+    this.bool11 = false;
 }
 
   cT1 = () => {
@@ -198,7 +199,7 @@ class B4 extends React.Component {
 
   cT6 = () => {
     let self = this;
-    this.bool1 = true
+    this.bool6 = true
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -207,7 +208,7 @@ class B4 extends React.Component {
 
   cF6 = () => {
     let self = this;
-    this.bool1 = false
+    this.bool6 = false
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -216,7 +217,7 @@ class B4 extends React.Component {
 
   cT7 = () => {
     let self = this;
-    this.bool2 = true
+    this.bool7 = true
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -225,7 +226,7 @@ class B4 extends React.Component {
 
   cF7 = () => {
     let self = this;
-    this.bool2 = false
+    this.bool7 = false
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -234,7 +235,7 @@ class B4 extends React.Component {
 
   cT8 = () => {
     let self = this;
-    this.bool2 = true
+    this.bool8 = true
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -243,7 +244,7 @@ class B4 extends React.Component {
 
   cF8 = () => {
     let self = this;
-    this.bool2 = false
+    this.bool8 = false
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -252,7 +253,7 @@ class B4 extends React.Component {
 
   cT9 = () => {
     let self = this;
-    this.bool3 = true
+    this.bool9 = true
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -261,7 +262,7 @@ class B4 extends React.Component {
 
   cF9 = () => {
     let self = this;
-    this.bool3 = false
+    this.bool9 = false
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -270,7 +271,7 @@ class B4 extends React.Component {
 
   cT10= () => {
     let self = this;
-    this.bool4 = true
+    this.bool10 = true
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -279,7 +280,7 @@ class B4 extends React.Component {
 
   cF10 = () => {
     let self = this;
-    this.bool4 = false
+    this.bool10 = false
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -288,7 +289,7 @@ class B4 extends React.Component {
 
   cT11 = () => {
     let self = this;
-    this.bool5 = true
+    this.bool11 = true
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -297,7 +298,7 @@ class B4 extends React.Component {
 
   cF11 = () => {
     let self = this;
-    this.bool5 = false
+    this.bool11 = false
     setTimeout(function() {
       self.forceUpdate();
     },8 );
@@ -314,18 +315,18 @@ class B4 extends React.Component {
 <div style={{ width: '30%', fontSize: 22, position: 'fixed', top: 200, right: 5 }} >
 <br /><br />
 <a href="http://schalk.net:4001">
-<button style={this.bool1 ? this.style1 : this.style2 }
-   onMouseEnter={ () => this.cT1() }
-   onMouseLeave={ () => this.cF1() }  >
+<button style={this.bool6 ? this.style1 : this.style2 }
+   onMouseEnter={ () => this.cT6() }
+   onMouseLeave={ () => this.cF6() }  >
  Fun With Monads
   </button>
 </a>
 
 <br /><br />
 <a href="http://schalk.net:4002">
-  <button style={this.bool3 ? this.style1 : this.style2 }
-   onMouseEnter={ () => this.cT3() }
-   onMouseLeave={ () => this.cF3() }  >
+  <button style={this.bool7 ? this.style1 : this.style2 }
+   onMouseEnter={ () => this.cT7() }
+   onMouseLeave={ () => this.cF7() }  >
    Websockets Monads
   </button>
 </a>
