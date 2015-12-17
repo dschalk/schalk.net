@@ -387,6 +387,23 @@
 	          _react2['default'].createElement('br', null),
 	          _react2['default'].createElement(
 	            'a',
+	            { href: 'http://schalk.net:4003' },
+	            _react2['default'].createElement(
+	              'button',
+	              { style: _this.bool8 ? _this.style1 : _this.style2,
+	                onMouseEnter: function () {
+	                  return _this.cT8();
+	                },
+	                onMouseLeave: function () {
+	                  return _this.cF8();
+	                } },
+	              'Websockets Monads Part 2'
+	            )
+	          ),
+	          _react2['default'].createElement('br', null),
+	          _react2['default'].createElement('br', null),
+	          _react2['default'].createElement(
+	            'a',
 	            { href: 'http://transcendent.ninja' },
 	            _react2['default'].createElement(
 	              'button',
