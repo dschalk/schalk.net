@@ -332,6 +332,15 @@ class B4 extends React.Component {
 </a>
 
 <br /><br />
+<a href="http://schalk.net:4003">
+  <button style={this.bool8 ? this.style1 : this.style2 }
+   onMouseEnter={ () => this.cT8() }
+   onMouseLeave={ () => this.cF8() }  >
+   Websockets Monads Part 2
+  </button>
+</a>
+
+<br /><br />
 <a href="http://transcendent.ninja">
 <button style={this.bool1 ? this.style1 : this.style2 }
    onMouseEnter={ () => this.cT1() }
