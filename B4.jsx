@@ -318,17 +318,8 @@ class B4 extends React.Component {
 <button style={this.bool6 ? this.style1 : this.style2 }
    onMouseEnter={ () => this.cT6() }
    onMouseLeave={ () => this.cF6() }  >
- Fun With Monads
-  </button>
-</a>
-
-<br /><br />
-<a href="http://schalk.net:3000">
-  <button style={this.bool9 ? this.style1 : this.style2 }
-   onMouseEnter={ () => this.cT9() }
-   onMouseLeave={ () => this.cF9() }  >
    Javascript Monads Part 1
-  </button>
+ </button>
 </a>
 
 <br /><br />
@@ -336,8 +327,8 @@ class B4 extends React.Component {
   <button style={this.bool7 ? this.style1 : this.style2 }
    onMouseEnter={ () => this.cT7() }
    onMouseLeave={ () => this.cF7() }  >
-   Websockets Monads
-  </button>
+   Javascript Monads Part 2 - Websockets
+   </button>
 </a>
 
 <br /><br />
@@ -345,7 +336,7 @@ class B4 extends React.Component {
   <button style={this.bool8 ? this.style1 : this.style2 }
    onMouseEnter={ () => this.cT8() }
    onMouseLeave={ () => this.cF8() }  >
-   Websockets Monads Part 2
+   Javascript Monads Part 3
   </button>
 </a>
 
@@ -354,7 +345,7 @@ class B4 extends React.Component {
 <button style={this.bool1 ? this.style1 : this.style2 }
    onMouseEnter={ () => this.cT1() }
    onMouseLeave={ () => this.cF1() }  >
- Javascript Monads
+ Javascript Monads - Depricated Monad Definition
   </button>
 </a>
 

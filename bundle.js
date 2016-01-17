@@ -363,23 +363,6 @@
 	                onMouseLeave: function () {
 	                  return _this.cF6();
 	                } },
-	              'Fun With Monads'
-	            )
-	          ),
-	          _react2['default'].createElement('br', null),
-	          _react2['default'].createElement('br', null),
-	          _react2['default'].createElement(
-	            'a',
-	            { href: 'http://schalk.net:3000' },
-	            _react2['default'].createElement(
-	              'button',
-	              { style: _this.bool9 ? _this.style1 : _this.style2,
-	                onMouseEnter: function () {
-	                  return _this.cT9();
-	                },
-	                onMouseLeave: function () {
-	                  return _this.cF9();
-	                } },
 	              'Javascript Monads Part 1'
 	            )
 	          ),
@@ -397,7 +380,7 @@
 	                onMouseLeave: function () {
 	                  return _this.cF7();
 	                } },
-	              'Websockets Monads'
+	              'Javascript Monads Part 2 - Websockets'
 	            )
 	          ),
 	          _react2['default'].createElement('br', null),
@@ -414,7 +397,7 @@
 	                onMouseLeave: function () {
 	                  return _this.cF8();
 	                } },
-	              'Websockets Monads Part 2'
+	              'Javascript Monads Part 3'
 	            )
 	          ),
 	          _react2['default'].createElement('br', null),
@@ -431,7 +414,7 @@
 	                onMouseLeave: function () {
 	                  return _this.cF1();
 	                } },
-	              'Javascript Monads'
+	              'Javascript Monads - Depricated Monad Definition'
 	            )
 	          ),
 	          _react2['default'].createElement('br', null),
