@@ -7,7 +7,9 @@
 <body onload="window.scrollTo(0,50)" style="background-color: #000000" >
     <div id="divSix"></div>
   <div style=" width: 65%; text-align: 'left'; margin-left: 40px; margin-right: 40px; font-size: 24px; color: #FFE4C4 " >
-    <p>  "Fun With Monads" is the first page in the new Javascript Monads series. It shows how the basic monads work and gives a preview of the second page by presenting an example that uses instances of the more complex MonadIter constructor. The monad API is in an index.html script, so you can experiment with them in the browser console.</p>
+    <p>  The code for these demonstrations is open source and availablpe at <a href='https://github.com/dschalk?tab=repositories' style="color: #CCFFCC" >github.com/dschalk/</a> </p> 
+    <p>  "Fun With Monads" is a prelude to the Javascript Monads series. While revising it, I realized that the "bnd" method could be improved by making the functions it takes as argument have only one essential argument, a monad. Prior to that, the functions took a value and a monad and "bnd" operated on the calling monad's value, and the calling monad itself, and whatever other arguments the function brough with it. I re-defined the monad classes and named it "javascript-monads-part1".  </p>
+    <p> "javascript-monads-part1" begins the Javascript Monads series in earnest. The previous publications were exploratory in nature. javascript-monads-part1 has the new definition of Monad, which stems from the discussion in fun-with-monads. </p>
 
     <p>  Websockets Monads demonstrates the use of monads in handling websockets messages. These are not chat room messages; they are numeric data provided by a Haskell web server. The monads run the data through successive computations guided by client interaction with the browser. As in "Fun With Monads", the api is available for experimentation in the browser console.</p>
 

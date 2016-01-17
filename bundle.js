@@ -370,6 +370,23 @@
 	          _react2['default'].createElement('br', null),
 	          _react2['default'].createElement(
 	            'a',
+	            { href: 'http://schalk.net:4095' },
+	            _react2['default'].createElement(
+	              'button',
+	              { style: _this.bool9 ? _this.style1 : _this.style2,
+	                onMouseEnter: function () {
+	                  return _this.cT9();
+	                },
+	                onMouseLeave: function () {
+	                  return _this.cF9();
+	                } },
+	              'Javascript Monads Part 1'
+	            )
+	          ),
+	          _react2['default'].createElement('br', null),
+	          _react2['default'].createElement('br', null),
+	          _react2['default'].createElement(
+	            'a',
 	            { href: 'http://schalk.net:4002' },
 	            _react2['default'].createElement(
 	              'button',
@@ -387,7 +404,7 @@
 	          _react2['default'].createElement('br', null),
 	          _react2['default'].createElement(
 	            'a',
-	            { href: 'http://schalk.net:4003' },
+	            { href: 'http://schalk.net:3093' },
 	            _react2['default'].createElement(
 	              'button',
 	              { style: _this.bool8 ? _this.style1 : _this.style2,
