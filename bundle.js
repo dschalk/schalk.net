@@ -370,7 +370,7 @@
 	          _react2['default'].createElement('br', null),
 	          _react2['default'].createElement(
 	            'a',
-	            { href: 'http://schalk.net:4095' },
+	            { href: 'http://schalk.net:3095' },
 	            _react2['default'].createElement(
 	              'button',
 	              { style: _this.bool9 ? _this.style1 : _this.style2,
