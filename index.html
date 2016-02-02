@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="./style.css">
     <meta charset="utf-8"/>
     <title>David Schalk</title>
 </head>
 <body onload="window.scrollTo(0,50)" style="background-color: #000000" >
     <div id="divSix"></div>
   <div style=" width: 65%; text-align: 'left'; margin-left: 40px; margin-right: 40px; font-size: 24px; color: #FFE4C4 " >
-    <p>  The code for these demonstrations is open source and availablpe at <a href='https://github.com/dschalk?tab=repositories' style="color: #CCFFCC" >github.com/dschalk/</a> </p> 
-    <p>  "Fun With Monads" is a prelude to the Javascript Monads series. While revising it, I realized that the "bnd" method could be improved by making the functions it takes as argument have only one essential argument, a monad. Prior to that, the functions took a value and a monad and "bnd" operated on the calling monad's value, and the calling monad itself, and whatever other arguments the function brough with it. I re-defined the monad classes and named it "javascript-monads-part1".  </p>
-    <p> "javascript-monads-part1" begins the Javascript Monads series in earnest. The previous publications were exploratory in nature. javascript-monads-part1 has the new definition of Monad, which stems from the discussion in fun-with-monads. </p>
-
-    <p>  Websockets Monads demonstrates the use of monads in handling websockets messages. These are not chat room messages; they are numeric data provided by a Haskell web server. The monads run the data through successive computations guided by client interaction with the browser. As in "Fun With Monads", the api is available for experimentation in the browser console.</p>
-
-    <p>  Websockets Monads Part 2 demonstrates shows how easy it is to construct trees with many branches. The app awards one point if you select numbers and operater that make the number "20", and three points if you make "18". The action flows through a single tree. Whether the last selection in a computation is a number or an operator determines which tree executes.</p>
-    <p>  The "Javascript Monads" link is to an online description and demonstration of javascript generalized monads. They can provide encapsulated chains of computations free from side effects, but they are called "generalized" because they are capable of doing much more than that. The code is at github.com/dschalk/reactive-monads and github.com/dschalk/mobservable-monads. Mobservable is my favorite library for observable reactive functionality, but the code was refactored to substitute frequent calls to React.forceUpdate for mobservable. I wasn't using React the way they do at Facebook, and I have since stopped using it altogether. I find snabbdom to be a better alternative for my applications. </p>
-
-    <p>  "Reactive Buttons" shows a way to make React.js buttons that light up when the mouse pointer hovers over them. These buttons have more than the usual amount of functionality. They interract with textbox input.</p> 
-    
-    <p> "Todo List" is a little todo app. The monads aren't necessary, but the app provides an opportunity to show how the monads work. The code is at <a href="https://github.com/dschalk/reactive-todos" style="color: #CCFFCC" >reactive todos</a>  </p>
-
-    <p> The game of Score features a Haskell Websockets server on the back end, and React.js on the front end. A tutorial at Score Tutorial describes the application in detail. I still use virtual dom diff & render, but I now do it with <a style="color: #CCFFCC" href="https://github.com/paldepind/snabbdom">snabbdom</a>, which is more efficient and more pleasant to work with in my applications. React may well be the best option for big enterprises like Facebook.  </p>
+    <p>  The code for these demonstrations is open source and availablpe at <a href='https://github.com/dschalk?tab=repositories'  >github.com/dschalk/</a> </p> 
+    <p> "JS-monads-part1" begins the Javascript Monads series in earnest. The previous publications were exploratory in nature.</p>
+    <p>  "JS-monads-part2 demonstrates the handling of numeric and string data provided by a Haskell web server. The monads run the data through successive computations guided by user interaction with the browser. Most of the api is available for experimentation in the browser console.</p>
+    <p>  Like Websockets Monads Part 2, <a href="http://schalk.net:3093">Part 3</a> demonstrates guided iteration along a chain of monads, and also a tree with multiple branches. The centerpiece is "updateCalc", which controls the action in a dice game. The game is an expansion of the basic tree JS Monads Part 2. Quite a bit of functionality is handled with 31 lines of code. Click JS-monads-part3 for more information and a demonstration of the multi-player game.</p>
+    <span> The game of Score features a Haskell Websockets server on the back end, and React.js on the front end. I did not use React.js as intended, and was on the verge of abandoning altogether. I found </span>  
+    <a href="https://github.com/paldepind/snabbdom">Snabbdom</a> 
+    <span> to much more effective in my applications. A lengthy explanation is at </span> 
+    <a href="https://www.schoolofhaskell.com/user/dschalk/Websockets%20Game%20of%20Score" >Game of Score</a> 
 </div>
      <p> </p>
 <script type="text/javascript" src="./bundle.js"></script>

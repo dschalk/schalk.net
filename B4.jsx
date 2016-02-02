@@ -350,24 +350,6 @@ class B4 extends React.Component {
 </a>
 
 <br /><br />
-<a href="http://schalk.net:3004">
-  <button style={this.bool3 ? this.style1 : this.style2 }
-   onMouseEnter={ () => this.cT3() }
-   onMouseLeave={ () => this.cF3() }  >
-Reactive Buttons
-  </button>
-</a>
-
-<br /><br />
-<a href="http://schalk.net:4000">
-  <button style={this.bool4 ? this.style1 : this.style2 }
-   onMouseEnter={ () => this.cT4() }
-   onMouseLeave={ () => this.cF4() }  >
-Todo List
-  </button>
-</a>
-
-<br /><br />
 <a href="http://schalk.net:3015">
   <button style={this.bool2 ? this.style1 : this.style2 }
    onMouseEnter={ () => this.cT2() }

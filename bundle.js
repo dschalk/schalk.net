@@ -421,40 +421,6 @@
 	          _react2['default'].createElement('br', null),
 	          _react2['default'].createElement(
 	            'a',
-	            { href: 'http://schalk.net:3004' },
-	            _react2['default'].createElement(
-	              'button',
-	              { style: _this.bool3 ? _this.style1 : _this.style2,
-	                onMouseEnter: function () {
-	                  return _this.cT3();
-	                },
-	                onMouseLeave: function () {
-	                  return _this.cF3();
-	                } },
-	              'Reactive Buttons'
-	            )
-	          ),
-	          _react2['default'].createElement('br', null),
-	          _react2['default'].createElement('br', null),
-	          _react2['default'].createElement(
-	            'a',
-	            { href: 'http://schalk.net:4000' },
-	            _react2['default'].createElement(
-	              'button',
-	              { style: _this.bool4 ? _this.style1 : _this.style2,
-	                onMouseEnter: function () {
-	                  return _this.cT4();
-	                },
-	                onMouseLeave: function () {
-	                  return _this.cF4();
-	                } },
-	              'Todo List'
-	            )
-	          ),
-	          _react2['default'].createElement('br', null),
-	          _react2['default'].createElement('br', null),
-	          _react2['default'].createElement(
-	            'a',
 	            { href: 'http://schalk.net:3015' },
 	            _react2['default'].createElement(
 	              'button',

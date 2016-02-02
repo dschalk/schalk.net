@@ -314,7 +314,7 @@ class B4 extends React.Component {
 
 <div style={{ width: '30%', fontSize: 22, position: 'fixed', top: 200, right: 5 }} >
 <br /><br />
-<a href="http://schalk.net:4001">
+<a href="http://schalk.net:3000">
 <button style={this.bool6 ? this.style1 : this.style2 }
    onMouseEnter={ () => this.cT6() }
    onMouseLeave={ () => this.cF6() }  >
@@ -346,24 +346,6 @@ class B4 extends React.Component {
    onMouseEnter={ () => this.cT1() }
    onMouseLeave={ () => this.cF1() }  >
  Javascript Monads - Depricated Monad Definition
-  </button>
-</a>
-
-<br /><br />
-<a href="http://schalk.net:3004">
-  <button style={this.bool3 ? this.style1 : this.style2 }
-   onMouseEnter={ () => this.cT3() }
-   onMouseLeave={ () => this.cF3() }  >
-Reactive Buttons
-  </button>
-</a>
-
-<br /><br />
-<a href="http://schalk.net:4000">
-  <button style={this.bool4 ? this.style1 : this.style2 }
-   onMouseEnter={ () => this.cT4() }
-   onMouseLeave={ () => this.cF4() }  >
-Todo List
   </button>
 </a>
 
