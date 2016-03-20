@@ -7,13 +7,24 @@
 </head>
 <body onload="window.scrollTo(0,50)" style="background-color: #000000" >
 <div style=" width: 65%; text-align: 'left'; margin-left: 40px; margin-right: 40px; font-size: 24px; color: #FFE4C4 " >
-<h2 style="text-align: center" >Experiments with React, Websockets, and Monads</h2>
+<h2 style="text-align: center" >Javascript Monads Project</h2>
     <p>  The code for these demonstrations is open source and availablpe at <a href='https://github.com/dschalk?tab=repositories'  >github.com/dschalk/</a> </p> 
-    <p> "JS-monads-part1" begins the Javascript Monads series. The previous publications were exploratory in nature and had various definitions for Monad and MonadIter.</p>
-    <p>  "JS-monads-part2 demonstrates the handling of numeric and string data provided by a Haskell web server. The monads run the data through successive computations guided by user interaction with the browser. There is also a decision tree using MonadIter instances. What happens is guided by user computations of numbers from random throws of four dice. Most of the api is available for experimentation in the browser console.</p>
-    <p>  Like Websockets Monads Part 2, <a href="http://schalk.net:3093">Part 3</a> demonstrates guided iteration along a chain of monads and a tree with multiple branches. The tree has been expanded for more decision possiblities, and there is a score board for multi-player competition. "updateCalc", controls flow of action. Quite a bit of functionality is handled with not many lines of code. Click JS-monads-part3 for more information and a demonstration of the multi-player game.</p>
-    <p>  Part 4 features the game from Part 3 using <a href="https://github.com/motorcyclejs">Motorcycle.js</a>. It is a work in progress.  
-    <p> "javascript-monads" uses a deprecated version of Monad. It has an "fmap" method. </p>
+    <p> I experimented with various definitions of "Monad". The current state of the project can be found in JS-monads-part4 and JS-monads-part5. The Monad "ret" method no longer self-mutilates the calling monad by replacing its "x" attribute. Instead, it creates a new monad with the calling monad's name. We can create a monad named "mon" with value "valA" as follows: "var mon = mew Monad(valA, "mon"). "var a = mon" creates a reference to it. If we run "mon.ret(valB)" and "var b = mon", a will still be a monad with value valA and id 'mon' and b will be a monad with value valB and id 'mon'. References to "mon" point to the new monad. Had we not created a reference to the old monad "mon", it would be subject to garbage collection. </p>
+
+
+    <span> Parts 4 and 5 demonstrate tools I find useful for front-end web application development. The server is built on top of the </span>
+      <a href="https://github.com/yesodweb/wai/tree/master/wai-websockets">Wai Websockets Server</a> 
+      <span>It is very easy to modify whenever the need arises because the Haskell Programming Language provides list comprehension and pattern matching and, when used as intended, is not likely to surprise you with unintended side effects. The front end is a </span>
+      <a href="https://github.com/motorcyclejs">Motorcyclejs</a>  
+      <span> application. Motorcyclejs is Cycle.js, only using </span>  
+      <a href="https://github.com/paldepind/snabbdom">Snabbdom</a> 
+      <span> instead of "virtual-dom", and </span> 
+      <a href="https://github.com/cujojs/most" style="color: #EECCFF">Most</a> 
+      <span> instead of "RxJS". </span> 
+      h('br'),
+
+
+
     <span> The game of Score features a Haskell Websockets server on the back end, and React.js on the front end. I did not use React.js as intended, and was on the verge of abandoning altogether. I found </span>  
     <a href="https://github.com/paldepind/snabbdom">Snabbdom</a> 
     <span> to much more effective in my applications. A lengthy explanation is at </span> 
@@ -51,6 +62,13 @@
 </a>
 
 <br /><br />
+<a href="http://schalk.net:3077">
+  <button>
+   Javascript Monads Part 5
+  </button>
+</a>
+
+<br /><br />
 <a href="http://transcendent.ninja">
 <button>
  Javascript Monads - Depricated Monad Definition
@@ -68,8 +86,6 @@ Game of Score
 </div>
 )
 }
-
-
 
      <p> </p>
      <!-- <script type="text/javascript" src="./bundle.js"></script> -->
