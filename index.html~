@@ -8,8 +8,13 @@
 <body onload="window.scrollTo(0,50)" style="background-color: #000000" >
 <div style=" width: 65%; text-align: 'left'; margin-left: 40px; margin-right: 40px; font-size: 24px; color: #FFE4C4 " >
 <h2 style="text-align: center" >Javascript Monads Project</h2>
-
-    <p>  The code for these demonstrations is open source and availablpe at <a href='https://github.com/dschalk?tab=repositories'  >github.com/dschalk/</a> </p> 
+<span> The online demonstration is at <span>
+<a href="http://schalk.net:3055">
+  <button>
+   JS-monads-part6
+  </button>
+</a>
+    <p>  The code for the demonstration is open source. It, along with some deprecated legacy code for the investagatory parts 1 through 5 of this series, are available at <a href='https://github.com/dschalk?tab=repositories'  >github.com/dschalk/</a> </p> 
     <span> This is a </span>
         <a href="https://github.com/motorcyclejs">Motorcyclejs</a>  
       <span> application. Motorcyclejs is Cycle.js, only using </span>  
