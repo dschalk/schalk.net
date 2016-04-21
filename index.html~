@@ -23,11 +23,72 @@
       <br />
       <span> A link to the old </span>
       <a href="https://www.schoolofhaskell.com/user/dschalk/Websockets%20Game%20of%20Score" >Game of Score</a> 
-      <span> is also included, but the code has not been optimized and emulating the code is not recommended. After seeing how the monads work in </span>
+      <p> is also included but the code has not been optimized, I don't think the framework is suitable for the application, and emulating the code is definitely not recommended. It does, however, function as intended. <p>
+      <span>  After seeing how the monads work in </span>
       <a href="http://schalk.net:3055">JS-monads-part6,</a>
-      <span> you might want to try them, or something like them, in your own project. I tested a monad that internally saves the history of everything it captures with its ret() method. It worked, but I opted to use a streaming monad that feeds the stream captured data into a stream that stores the information in a simple monad and updates the virtual DOM. Information stored in this manner is accessed by the BACK and FORWARD buttons in the JS-monads-part6 game.
+      <span> you might want to try them, or something like them, in your own project. I tested a monad that internally saves the history of everything it captures with its ret() method. It worked, but I opted to use a streaming monad that feeds the stream captured data into a stream that stores the information in a simple monad and updates the virtual DOM. Information stored in this manner is accessed by the BACK and FORWARD buttons in the JS-monads-part6 game. Here are what I consider to be the basic monads: </span>
+        <pre>
+  var Monad = function Monad(z, g) {
+    var _this = this;
 
+    this.x = z;
+    if (arguments.length === 1) {
+      this.id = 'anonymous';
+    } else {
+      this.id = g;
+    };
 
+    this.bnd = function (func, ...args) {
+       return func(_this.x, ...args);
+    };
+
+    this.ret = function (a) {
+      O.[_this.id] = new Monad(a, _this.id);
+      return O.[_this.id]
+    };
+  };               
+
+  var Monad$ = function Monad$(z, g) {
+    var _this = this;
+    this.subject = subject();
+    this.observer = this.subject.observer;
+    this.stream = this.subject.stream;
+    this.x = z;
+    this.id = g;
+
+    this.bnd = function (func, ...args) {
+       return func(_this.x, ...args);
+    };
+
+    this.ret = function (a) {
+      O[_this.id] = new Monad$(a,_this.id);
+      _this.observer.next(a);
+      console.log('Streaming from ', _this.id);
+      return O[_this.id];
+    };
+  };
+
+  var MonadIter = function MonadIter() {
+    var _this = this;
+    this.p = function (a, ... args) {};
+  
+    this.release = function (x, ...args) {
+      return this.p(x, ...args);
+    };
+  
+    this.bnd = function (func) {
+      _this.p = func;
+    };
+  };
+
+  var ret = function ret(v, id) {
+    if (arguments.length === 1) {
+      return (new Monad(v, 'anonymous'));
+    }
+    window[id] = new Monad(v, id);
+    return window[id];
+  };
+        </pre> 
 </div>
 <p>  </p>
 

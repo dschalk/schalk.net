@@ -1,6 +1,6 @@
 #schalk.net
 
-This is the code for [http://schalk.net](http://schalk.net), a central location for the JS-monads project. A link to the old Game of Score is also included, but the code has not been optimized, the coding style and framework have been abandoned, and emulating it is definitely not recommended. It does, however, work as intended.
+This is the code for [http://schalk.net](http://schalk.net), a central location for the JS-monads project. A link to the old Game of Score is also included but the code has not been optimized, the coding style and framework have been abandoned, and emulating it is definitely not recommended. It does, however, work as intended.
 
 Here are the monad definitions:
 

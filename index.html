@@ -23,7 +23,8 @@
       <br />
       <span> A link to the old </span>
       <a href="https://www.schoolofhaskell.com/user/dschalk/Websockets%20Game%20of%20Score" >Game of Score</a> 
-      <span> is also included, but the code has not been optimized and emulating the code is not recommended. After seeing how the monads work in </span>
+      <p> is also included but the code has not been optimized, I don't think the framework is suitable for the application, and emulating the code is definitely not recommended. It does, however, function as intended. <p>
+      <span>  After seeing how the monads work in </span>
       <a href="http://schalk.net:3055">JS-monads-part6,</a>
       <span> you might want to try them, or something like them, in your own project. I tested a monad that internally saves the history of everything it captures with its ret() method. It worked, but I opted to use a streaming monad that feeds the stream captured data into a stream that stores the information in a simple monad and updates the virtual DOM. Information stored in this manner is accessed by the BACK and FORWARD buttons in the JS-monads-part6 game. Here are what I consider to be the basic monads: </span>
         <pre>
