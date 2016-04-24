@@ -11,7 +11,7 @@
 <span> The online demonstration is at <span>
 <a href="http://schalk.net:3055">
   <button>
-   JS-monads-part6
+   JS-monads-stable
   </button>
 </a>
     <p>  The code for the demonstration is open source. It, along with some deprecated legacy code for the investagatory parts 1 through 5 of this series, are available at <a href='https://github.com/dschalk?tab=repositories'  >github.com/dschalk/</a> </p> 
