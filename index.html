@@ -14,87 +14,27 @@
    JS-monads-stable
   </button>
 </a>
-    <p>  The code for the demonstration is open source. It, along with some deprecated legacy code for the investagatory parts 1 through 5 of this series, are available at <a href='https://github.com/dschalk?tab=repositories'  >github.com/dschalk/</a> </p> 
-    <span> This is a </span>
-        <a href="https://github.com/motorcyclejs">Motorcyclejs</a>  
-      <span> application. Motorcyclejs is Cycle.js, only using </span>  
-      <a href="https://github.com/paldepind/snabbdom">Snabbdom</a> 
-      <span> instead of "virtual-dom", and </span> 
-      <a href="https://github.com/cujojs/most" style="color: #EECCFF">Most</a> 
-      <span> instead of "RxJS". </span> 
+  <br />  
+  <br />  
+  <br />  
+    <p>  The code for the demonstration is open source. The repository is at <a href='https://github.com/dschalk?tab=repositories'  >github.com/dschalk/</a> </p> 
+    <p> I am storing some old project links here. I have since found much better ways of doing things. 
       <br />
-      <span>  The Haskell websockets server used in JS-monads-part6 is based on the </span>
-      <a href="https://github.com/yesodweb/wai.git">Wai Websockets Server.</a>
-      <br />
-      <span> A link to the old </span>
+      <span> Here is a link to the  </span>
       <a href="https://www.schoolofhaskell.com/user/dschalk/Websockets%20Game%20of%20Score" >Game of Score</a> 
-      <p> is also included but the code has not been optimized, I don't think the framework is suitable for the application, and emulating the code is definitely not recommended. It does, however, function as intended. <p>
+      <p> If I had to do over, I would code Score differently. It does, however, function as intended. <p>
       <span>  After seeing how the monads work in </span>
       <a href="http://schalk.net:3055">JS-monads-part6,</a>
-      <span> you might want to try them, or something like them, in your own project. I tested a monad that internally saves the history of everything it captures with its ret() method. It worked, but I opted to use a streaming monad that feeds the stream captured data into a stream that stores the information in a simple monad and updates the virtual DOM. Information stored in this manner is accessed by the BACK and FORWARD buttons in the JS-monads-part6 game. Here are what I consider to be the basic monads: </span>
-        <pre>
-  var Monad = function Monad(z, g) {
-    var _this = this;
-
-    this.x = z;
-    if (arguments.length === 1) {
-      this.id = 'anonymous';
-    } else {
-      this.id = g;
-    };
-
-    this.bnd = function (func, ...args) {
-       return func(_this.x, ...args);
-    };
-
-    this.ret = function (a) {
-      O.[_this.id] = new Monad(a, _this.id);
-      return O.[_this.id]
-    };
-  };               
-
-  var Monad$ = function Monad$(z, g) {
-    var _this = this;
-    this.subject = subject();
-    this.observer = this.subject.observer;
-    this.stream = this.subject.stream;
-    this.x = z;
-    this.id = g;
-
-    this.bnd = function (func, ...args) {
-       return func(_this.x, ...args);
-    };
-
-    this.ret = function (a) {
-      O[_this.id] = new Monad$(a,_this.id);
-      _this.observer.next(a);
-      console.log('Streaming from ', _this.id);
-      return O[_this.id];
-    };
-  };
-
-  var MonadIter = function MonadIter() {
-    var _this = this;
-    this.p = function (a, ... args) {};
-  
-    this.release = function (x, ...args) {
-      return this.p(x, ...args);
-    };
-  
-    this.bnd = function (func) {
-      _this.p = func;
-    };
-  };
-
-  var ret = function ret(v, id) {
-    if (arguments.length === 1) {
-      return (new Monad(v, 'anonymous'));
-    }
-    window[id] = new Monad(v, id);
-    return window[id];
-  };
-        </pre> 
-</div>
+  <br />  
+  <br />  
+  <br />  
+  <br />  
+  <br />  
+  <br />  
+  <br />  
+  <br />  
+  <br />  
+  <br />  
 <h2>Deprecated Code</h2>
 
 <p>This code has not been optimized, cleaned up, refactored or anything like that. Moreover, I found much better ways of doeing things, as shown in JS-monads-stable. For what it might be worth, here is the old stuff:  </p>
